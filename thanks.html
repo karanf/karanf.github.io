@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Karan Fadnavis | UX Design and Development | Contact Me</title>
+    <title>Karan Fadnavis | UX Design and Development | Services</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -14,40 +14,40 @@
 <body>
     <header>
         <div class="logo-area">
-        <a href="/index.html"><img src="img/k-logo.svg" alt="" class="site-logo"></a>
+            <a href="/index.html"><img src="img/k-logo.svg" alt="" class="site-logo"></a>
         </div>
     </header>
     <div class="page-container transition-fade" id="swup">
-      <div id="contact-me" class="content-area">
-          <div class="container">
-              <div class="parallax-container">
+      
+      <div id="services" class="content-area">
+        <div class="container">
+            <div class="parallax-container" data-pointer-events="true">
                 <div class="section-header parallax-element" data-depth="0.2">
-                  <h1 class="transition-expand"><span>Contact Me</span></h1>
+                    <h1 class="transition-expand"><span>Thanks</span></h1>
                 </div>
-              </div>
-              <div class="parallax-container" data-pointer-events="true">
+            </div>
+            <div class="parallax-container">
                 <div class="parallax-element" data-depth="0.5">
-                    <div class="transition-slide-right">
-                        <form method="post" action="https://formspree.io/karanf@gmail.com" target="_blank">
-                            <span class="selected">Hi Karan, I'm<sup>*</sup> </span><input type="text" placeholder="Craven Bacon" name="name" value=""></input><span class="selected">. I am interested in your<sup>*</sup> </span><select><option value="UI / UX" selected>UI / UX Design</option><option value="Prototyping">App Prototyping</option><option value="Web Consulting">Web Consultancy</option><option value="Web Design">Web Design</option><option value="Frontend">Frontend Dev</option><option value="Logo / Graphic Design ">Logo / Graphic Design</option><option value="Custom">Custom Project</option></select><span class="selected"> services. Please contact me on my email<sup>*</sup>:</span><input type="text" name="email" value="" placeholder="bacon@craven.nz"></input><span class="selected">, or call me on:</span><input type="text" placeholder="0214537869"></input>.<br />
-                            <button class="purple-link with-background" type="submit" name="submit" value="Submit">Submit &rArr;</button><br>
-                            <input type=”hidden” name=”_next” value=”thanks.html” />
-                        </form>
-                    </div>
-                  <p class="transition-slide-right"><a class="purple-link with-background" href="/portfolio.html"><nobr>&lArr; Back to my work</nobr></a><span class="selected"> / </span><a class="purple-link with-background" href="/index.html"><nobr>Homepage &rArr; </nobr></a></p>
+                    <p class="transition-slide-right"><span class="selected">Thanks for getting in touch. I'll get back to you soon. Cheers!</span></p>
                 </div>
+            </div>
+          <div class="transition-slide-right">
+              <div class="parallax-container" data-pointer-events="true">
+                  <div class="parallax-element" data-depth="0.1">
+                      <p><a class="purple-link with-background" href="/index.html"><nobr>&lArr; Homepage</nobr></a><span class="selected"> / </span><a class="purple-link with-background" href="/contact.html"><nobr>Contact me &rArr;</nobr></a></p>
+                  </div>
+                  
               </div>
-              
           </div>
-          
+        </div>
       </div>
     </div>
     
     <script type="module">
-            var mobileDevice;
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                mobileDevice = true;
-            }
+        var mobileDevice;
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            mobileDevice = true;
+        }
 
             import {
                 Polyline, Renderer, Transform, Geometry, Program, Mesh, Vec3, Vec2, Color,
@@ -218,7 +218,6 @@
                     if (!mobileDevice) {
                         renderer.render({scene});
                     }
-                    
                 }
             }
     
@@ -396,41 +395,42 @@
       };
 
       const scrollStuff = () => {
-        var leftArrow = $('.left-arrow');
-        var rightArrow = $('.right-arrow');
+            var leftArrow = $('.left-arrow');
+            var rightArrow = $('.right-arrow');
 
-        const scrollLeft = () => {
-            var currentScrollPosition = $('.portfolio-slider').scrollLeft();
-            var elementWidth = $('.card').outerWidth(true); 
-            var newScrollPosition = currentScrollPosition - elementWidth;
-            $('.portfolio-slider').stop().animate({
-                scrollLeft: newScrollPosition
-            }, 300);
+            const scrollLeft = () => {
+                var currentScrollPosition = $('.portfolio-slider').scrollLeft();
+                var elementWidth = $('.card').outerWidth(true); 
+                var newScrollPosition = currentScrollPosition - elementWidth;
+                $('.portfolio-slider').stop().animate({
+                    scrollLeft: newScrollPosition
+                }, 300);
+            }
+
+            const scrollRight = () => {
+                var currentScrollPosition = $('.portfolio-slider').scrollLeft();
+                var elementWidth = $('.card').outerWidth(true); 
+                var newScrollPosition = currentScrollPosition + elementWidth;
+                $('.portfolio-slider').stop().animate({
+                    scrollLeft: newScrollPosition
+                }, 300);
+            }
+
+            leftArrow.on('click', scrollLeft);
+
+            rightArrow.on('click', scrollRight);
         }
-
-        const scrollRight = () => {
-            var currentScrollPosition = $('.portfolio-slider').scrollLeft();
-            var elementWidth = $('.card').outerWidth(true); 
-            var newScrollPosition = currentScrollPosition + elementWidth;
-            $('.portfolio-slider').stop().animate({
-                scrollLeft: newScrollPosition
-            }, 300);
-        }
-
-        leftArrow.on('click', scrollLeft);
-
-        rightArrow.on('click', scrollRight);
-    }
-    
-scrollStuff();
+        
+    scrollStuff();
 
       window.requestAnimationFrame(parallaxInit);
 
       swup.on('contentReplaced', function(){
         window.requestAnimationFrame(parallaxInit);
-
         scrollStuff();
       });
     </script>
+
+    
 </body>
 </html>

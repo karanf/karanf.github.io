@@ -152,6 +152,24 @@ h1 {
     h1 {
       font-size: 5rem; } }
 
+h3 {
+  font-size: 1.25rem;
+  color: #fbf500;
+  text-shadow: -2px 2px 0 #44107a, -4px 4px 0 #c61256;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 10;
+  display: inline-block; }
+  @media screen and (min-width: 768px) {
+    h3 {
+      font-size: 1.75rem; } }
+  @media screen and (min-width: 960px) {
+    h3 {
+      font-size: 2rem; } }
+  @media screen and (min-width: 1200px) {
+    h3 {
+      font-size: 3rem; } }
+
 body {
   font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
   color: black;
@@ -170,6 +188,8 @@ body {
 p {
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; }
+  p + h3 {
+    margin-top: 2rem; }
 
 .selected {
   background-color: #c61256;
