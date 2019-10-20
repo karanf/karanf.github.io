@@ -285,7 +285,7 @@ button {
 
 .slider-arrows {
   color: #fbf500;
-  font-size: 4rem;
+  font-size: 2.5rem;
   position: absolute;
   right: 0;
   top: 50%;
@@ -293,14 +293,13 @@ button {
           transform: translate(0, -50%);
   margin: 0;
   padding: 0;
-  display: none;
   z-index: 15; }
   .slider-arrows .left-arrow, .slider-arrows .right-arrow {
     display: inline-block;
     cursor: pointer; }
   @media screen and (min-width: 960px) {
     .slider-arrows {
-      display: block; } }
+      font-size: 4rem; } }
 
 .card {
   -webkit-box-flex: 0;
