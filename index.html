@@ -443,16 +443,17 @@ scrollStuff();
       });
     </script>
 
-    <script>
+    <script type="text/javascript">
         $(document).ready(function(){
             var preloader = $('.preloader');
 
-            $(window).on('load', function(){
+            setTimeout(function(){
                 preloader.addClass('loaded');
-                setTimeout(function(){
-                    preloader.detach();
-                }, 1200);
-            });
+            }, 100);
+
+            setTimeout(function(){
+                preloader.detach();
+            }, 2100);
         });
     </script>
 </body>
