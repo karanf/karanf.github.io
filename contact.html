@@ -28,12 +28,79 @@
               <div class="parallax-container" data-pointer-events="true">
                 <div class="parallax-element" data-depth="0.5">
                     <div class="transition-slide-right">
-                        <form method="post" action="https://formspree.io/karanf@gmail.com" target="_blank">
-                            <span class="selected">Hi Karan, I'm<sup>*</sup> </span><input type="text" placeholder="Craven Bacon" name="name" value=""></input><span class="selected">. I am interested in your<sup>*</sup> </span><select><option value="UI / UX" selected>UI / UX Design</option><option value="Prototyping">App Prototyping</option><option value="Web Consulting">Web Consultancy</option><option value="Web Design">Web Design</option><option value="Frontend">Frontend Dev</option><option value="Logo / Graphic Design ">Logo / Graphic Design</option><option value="Custom">Custom Project</option></select><span class="selected"> services. Please contact me on my email<sup>*</sup>:</span><input type="text" name="email" value="" placeholder="bacon@craven.nz"></input><span class="selected">, or call me on:</span><input type="text" placeholder="0214537869"></input>.<br />
+                        <form id="contact-form">
+                            <span class="selected">Hi Karan, I'm<sup>*</sup> </span><input type="text" placeholder="Craven Bacon" name="name" value="" id="name"></input><span class="selected">. I am interested in your<sup>*</sup> </span><select><option value="UI / UX" selected name="service" id="service">UI / UX Design</option><option value="Prototyping">App Prototyping</option><option value="Web Consulting">Web Consultancy</option><option value="Web Design">Web Design</option><option value="Frontend">Frontend Dev</option><option value="Logo / Graphic Design ">Logo / Graphic Design</option><option value="Custom">Custom Project</option></select><span class="selected"> services. Please contact me on my email<sup>*</sup>:</span><input type="text" name="email" id="email" value="" placeholder="bacon@craven.nz"></input><span class="selected">, or call me on:</span><input type="text" placeholder="0214537869" value="" id="phone" name="phone"></input>.<br />
                             <button class="purple-link with-background" type="submit" name="submit" value="Submit">Submit &rArr;</button><br>
-                            <input type=”hidden” name=”_next” value=”thanks.html” />
                         </form>
+                        <div id="thanks-message" style="display: none;">
+                            <p class=""><span class="selected">Thanks for getting in touch. I will respond to your query shorty. Cheers!</span></p>
+                        </div>
                     </div>
+                    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+
+                            $('#contact-form').on('submit', function(e) {
+                                e.preventDefault();
+
+                                $('form[id="contact-form"]').validate({
+                                    rules: {
+                                        name: 'required',
+                                        service: 'required',
+                                        email: {
+                                        required: true,
+                                        email: true,
+                                        }
+                                    },
+                                    messages: {
+                                        name: 'Would be nice to know who you are',
+                                        email: 'Would love to know how to get in touch with you',
+                                        service: 'Which of my services are of interest to you?'
+                                    },
+                                    submitHandler: function(form) {
+                                        //get the name field value
+                                        var name = $('#name').val();
+                                        //get the email field value
+                                        var email = $('#email').val();
+                                        //get the service
+                                        var service = $('#service').val();
+                                        //get the phone number
+                                        var phone = $('#phone').val();
+                                                    
+                                        //validation
+                                        
+                                        
+                                        //send to formspree
+                                        $.ajax({
+                                            url:'https://formspree.io/karanf@gmail.com',
+                                            method:'POST',
+                                            data:{
+                                                Name:name,
+                                                _replyto:email,
+                                                Email:email,
+                                                Service:service,
+                                                Phone:phone,
+                                                _subject:'Pfotfolio website form submission',
+                                            },
+                                            dataType:"json",
+                                            success:function() {
+                                                console.log('success');	
+                                                $('#contact-form').hide();
+                                                $('#thanks-message').show();
+                                            }	
+                                
+                                        });		
+                                    }
+                                });
+                                
+                                
+                                
+                            });
+                        
+                        });	
+                        
+                    </script>
                   <p class="transition-slide-right"><a class="purple-link with-background" href="/portfolio.html"><nobr>&lArr; Back to my work</nobr></a><span class="selected"> / </span><a class="purple-link with-background" href="/index.html"><nobr>Homepage &rArr; </nobr></a></p>
                 </div>
               </div>
