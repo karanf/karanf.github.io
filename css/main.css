@@ -638,6 +638,9 @@ select {
   select:hover {
     background-image: url(../img/chevron-arrow-down.svg); }
 
+.error-area {
+  color: #ff003c; }
+
 .images {
   display: -webkit-box;
   display: -ms-flexbox;
