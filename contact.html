@@ -48,8 +48,6 @@
                             $('#contact-form').on('submit', function(e) {
                                 e.preventDefault();
 
-                                var validForm = true;
-
                                 $('form[id="contact-form"]').validate({
                                     errorPlacement: function(error, element) {
                                         var errorArea = $('.error-area');
@@ -70,47 +68,11 @@
                                         service: 'Which of my services are of interest to you?'
                                     },
                                     submitHandler: function(form) {
-                                        validForm = true;
+                                        form.submit();
                                     }
 
                                     
-                                });
-
-                                if (validForm) {
-                                    //get the name field value
-                                    var name = $('#name').val();
-                                    //get the email field value
-                                    var email = $('#email').val();
-                                    //get the service
-                                    var service = $('#service').val();
-                                    //get the phone number
-                                    var phone = $('#phone').val();
-                                                
-                                    //validation
-                                    
-                                    
-                                    //send to formspree
-                                    $.ajax({
-                                        url:'https://formspree.io/karanf@gmail.com',
-                                        method:'POST',
-                                        data:{
-                                            Name:name,
-                                            _replyto:email,
-                                            Email:email,
-                                            Service:service,
-                                            Phone:phone,
-                                            _subject:'Pfotfolio website form submission',
-                                        },
-                                        dataType:"json",
-                                        success:function() {
-                                            console.log('success');	
-                                            $('#contact-form').hide();
-                                            $('#thanks-message').show();
-                                        }	
-                            
-                                    });		
-                                }
-                                
+                                });                               
                                 
                                 
                             });
