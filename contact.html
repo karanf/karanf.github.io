@@ -30,7 +30,7 @@
                     <div class="transition-slide-right">
                         <form id="contact-form" action="https://formspree.io/karanf@gmail.com" method="POST" target="_blank">
                             <span class="selected">Hi Karan, I'm<sup>*</sup> </span><input type="text" placeholder="Craven Bacon" name="name" value="" id="name"></input><span class="selected">. I am interested in your<sup>*</sup> </span><select name="service" id="service"><option value="UI / UX" selected >UI / UX Design</option><option value="Prototyping">App Prototyping</option><option value="Web Consulting">Web Consultancy</option><option value="Web Design">Web Design</option><option value="Frontend">Frontend Dev</option><option value="Logo / Graphic Design ">Logo / Graphic Design</option><option value="Custom">Custom Project</option></select><span class="selected"> services. Please contact me on my email<sup>*</sup>:</span><input type="text" name="email" id="email" value="" placeholder="bacon@craven.nz"></input><span class="selected">, or call me on:</span><input type="text" placeholder="0214537869" value="" id="phone" name="phone"></input>.<br />
-                            <button class="purple-link with-background" type="submit" name="btnSubmit" value="submit">Submit &rArr;</button><br>
+                            <button class="purple-link with-background" id="btnSubmit" type="submit" name="btnSubmit" value="submit">Submit &rArr;</button><br>
 
                             <div class="error-area">
 
@@ -44,6 +44,7 @@
 
                     <script type="text/javascript">
                         $(document).ready(function() {
+                            
 
                             $('#contact-form').on('submit', function(e) {
                                 e.preventDefault();
