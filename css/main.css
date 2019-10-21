@@ -299,8 +299,15 @@ button {
     background-image: none;
     padding: 0;
     margin: 0; }
+    .portfolio-slider a .image-background {
+      -webkit-filter: saturate(100%);
+              filter: saturate(100%);
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
     .portfolio-slider a:hover .image-background {
-      border-width: 15px; }
+      border-width: 15px;
+      -webkit-filter: saturate(80%);
+              filter: saturate(80%); }
   .portfolio-slider .portfolio-padding {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -368,12 +375,29 @@ button {
     max-height: 250px;
     -webkit-transition: border 0.3s;
     transition: border 0.3s;
-    padding: 20px;
+    padding: 30px;
     background: #fff; }
+    .card .image-background .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      line-height: 1.1;
+      font-size: 1.5em;
+      font-family: "Kelly Slab", Helvetica, Arial, sans-serif;
+      color: #fbf500; }
+    .card .image-background.neighbourly {
+      background: #60a735; }
     .card .image-background.evolution, .card .image-background.others {
       background: #2b2b2b; }
+    .card .image-background.coffee img {
+      width: 40%; }
     .card .image-background img {
-      width: 100%;
+      width: 80%;
       height: auto;
       max-height: 175px;
       position: absolute;
@@ -640,7 +664,11 @@ select {
             flex: 0 0 auto; }
     .images .image img {
       max-width: 100%;
-      height: auto; }
+      height: auto;
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); }
+    .images .image video {
+      max-width: 100%; }
 
 .preloader {
   position: absolute;
