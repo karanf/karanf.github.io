@@ -1089,13 +1089,6 @@
 		"oA": 0,
 		"oAP": "\/services.html",
 		"oF": 0
-		},
-	"\/thanks.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/thanks.html",
-		"oF": 0
 		}
 	},
 "hooks": [
