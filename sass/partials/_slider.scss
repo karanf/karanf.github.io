@@ -125,6 +125,22 @@
     max-width: 250px;
     max-height: 250px;
     transition: border 0.3s;
+    padding: 20px;
+    background: #fff;
+
+    &.evolution, &.others {
+      background: #2b2b2b;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 175px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   .violet {

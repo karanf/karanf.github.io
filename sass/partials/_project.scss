@@ -1,0 +1,19 @@
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+
+    .image {
+        width: 100%;
+        padding: 5px;
+        height: auto;
+        flex: 0 0 auto;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

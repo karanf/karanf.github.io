@@ -28,13 +28,29 @@
               <div class="parallax-container transition-slide-right" data-pointer-events="true">
                 <div class="parallax-element" data-depth="0.5">
                   <p class="transition-slide-right"><span class="selected">Hey! I'm Karan Fadnavis - a Designer based in Auckland, New Zealand. I experiment with UI, UX, Interaction, Product Design, Motion Graphics, and Web Design.</span></p>
-                  <p class="transition-slide-right"><span class="selected">Feel free to</span><a class="purple-link with-background" href="/portfolio.html"><nobr>check my work out &rArr;</nobr></a><span class="selected"> or </span><a class="purple-link with-background" href="/contact.html"><nobr>get in touch &rArr; </nobr></a></p>
+                  <p class="transition-slide-right"><span class="selected">Feel free to</span><a class="purple-link with-background" href="/portfolio.html"><nobr>check my work out &rArr;</nobr></a><span class="selected"> or </span><a class="purple-link with-background" href="/services.html"><nobr>the services I provide &rArr; </nobr></a></p><p class="transition-slide-right"><span class="selected">Want to work with me? <a class="purple-link with-background" href="/contact.html"><nobr>Get in touch &rArr; </nobr></a></p>
                 </div>
               </div>
               
           </div>
           
       </div>
+    </div>
+
+    <div class="preloader">
+        <div class='hole'>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        <p class="loading"><img src="img/k-logo.svg" alt="" class="preloader-logo"><br />LOADING</p>
     </div>
     
     <script type="module">
@@ -425,6 +441,19 @@ scrollStuff();
 
         scrollStuff();
       });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            var preloader = $('.preloader');
+
+            $(window).on('load', function(){
+                preloader.addClass('loaded');
+                setTimeout(function(){
+                    preloader.detach();
+                }, 1200);
+            });
+        });
     </script>
 </body>
 </html>

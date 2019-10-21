@@ -29,3 +29,9 @@ $tablet-max: calc($small-desktop - 1px);
 $small-desktop-max: calc($desktop - 1px);
 $desktop-max: calc($large-desktop - 1px);
 $large-desktop-max: calc($xl-desktop - 1px);
+
+// Preloader stuff
+$particles: 10; // has to match nodes in dom
+$particleSize: 140px;
+$lapDuration: 3s;
+$shadowColor: $neon-purple;

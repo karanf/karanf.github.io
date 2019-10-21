@@ -40,6 +40,16 @@ h1 {
     @media screen and (min-width: $xl-desktop) {
         font-size: 5rem;
     }
+
+    a {
+        text-decoration: none;
+        background: none;
+        text-shadow: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 h3 {

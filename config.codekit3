@@ -135,6 +135,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/projects\/coffee\/coffee-logo.png": {
+		"ft": 32768,
+		"iS": 8341,
+		"oA": 0,
+		"oAP": "\/img\/projects\/coffee\/coffee-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/projects\/coffee\/screen-1.png": {
+		"ft": 32768,
+		"iS": 116391,
+		"oA": 0,
+		"oAP": "\/img\/projects\/coffee\/screen-1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/projects\/coffee\/screen-2.png": {
+		"ft": 32768,
+		"iS": 98042,
+		"oA": 0,
+		"oAP": "\/img\/projects\/coffee\/screen-2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/projects\/coffee\/screen-3.png": {
+		"ft": 32768,
+		"iS": 102801,
+		"oA": 0,
+		"oAP": "\/img\/projects\/coffee\/screen-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/projects\/evolution\/ev-logo-red-new.png": {
 		"ft": 32768,
 		"iS": 6164,
@@ -183,6 +227,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/img\/projects\/goodycard\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/projects\/goodycard\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/projects\/goodycard\/merchant-dashboard.png": {
 		"ft": 32768,
@@ -539,6 +593,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/projects\/neighbourly\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/projects\/neighbourly\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/projects\/neighbourly\/new-campaign.jpg": {
 		"ft": 16384,
 		"iS": 233779,
@@ -631,6 +695,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/projects\/snowball\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/projects\/snowball\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/projects\/snowball\/snowball-logo.jpg": {
 		"ft": 16384,
 		"iS": 38462,
@@ -679,6 +753,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/img\/projects\/stuff\/logo.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/img\/projects\/stuff\/logo.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/projects\/stuff\/stuff-classifieds.png": {
@@ -841,11 +926,18 @@
 		"oAP": "\/portfolio.html",
 		"oF": 0
 		},
-	"\/projects\/1.html": {
+	"\/projects\/neighbourly.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/projects\/1.html",
+		"oAP": "\/projects\/neighbourly.html",
+		"oF": 0
+		},
+	"\/projects\/project-template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/projects\/project-template.html",
 		"oF": 0
 		},
 	"\/sass\/main.scss": {
@@ -909,6 +1001,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/partials\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/partials\/_preloader.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/css\/_preloader.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/partials\/_project.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/css\/_project.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
