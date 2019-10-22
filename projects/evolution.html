@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Karan Fadnavis | UX Design and Development | Contact Me</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <title>Karan Fadnavis | UX Design and Development</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
@@ -14,75 +14,37 @@
 <body>
     <header>
         <div class="logo-area">
-        <a href="/index.html"><img src="img/k-logo.svg" alt="" class="site-logo"></a>
+            <img src="../img/k-logo.svg" alt="" class="site-logo">
         </div>
     </header>
     <div class="page-container transition-fade" id="swup">
-      <div id="contact-me" class="content-area">
+      <div id="project" class="content-area">
           <div class="container">
-              <div class="parallax-container">
+              <div class="parallax-container" data-pointer-events="true">
                 <div class="section-header parallax-element" data-depth="0.2">
-                  <h1 class="transition-expand"><span>Contact Me</span></h1>
+                  <h1 class="transition-expand"><a class="" href="/portfolio.html">&lAarr;</a><span> Evolution Builders</span></h1>
                 </div>
               </div>
-              <div class="parallax-container" data-pointer-events="true">
-                <div class="parallax-element" data-depth="0.5">
-                    <div class="transition-slide-right">
-                        <form id="contact-form" action="https://formspree.io/karanf@gmail.com" method="POST" target="_blank">
-                            <span class="selected">Hi Karan, I'm<sup>*</sup> </span><input type="text" placeholder="Craven Bacon" name="name" value="" id="name"></input><span class="selected">. I am interested in your<sup>*</sup> </span><select name="service" id="service"><option value="UI / UX" selected >UI / UX Design</option><option value="Prototyping">App Prototyping</option><option value="Web Consulting">Web Consultancy</option><option value="Web Design">Web Design</option><option value="Frontend">Frontend Dev</option><option value="Logo / Graphic Design ">Logo / Graphic Design</option><option value="Custom">Custom Project</option></select><span class="selected"> services. Please contact me on my email<sup>*</sup>:</span><input type="text" name="email" id="email" value="" placeholder="bacon@craven.nz"></input><span class="selected">, or call me on:</span><input type="text" placeholder="0214537869" value="" id="phone" name="phone"></input>.<br />
-                            <button class="purple-link with-background" id="btnSubmit" type="submit" name="btnSubmit" value="submit">Submit &rArr;</button><br>
+              <div class="project-container transition-slide-right">
+                <div class="parallax-container" data-pointer-events="true">
+                    <div class="parallax-element" data-depth="0.5">
+                        <p class=""><span class="selected">Evolution Builders are a great bunch of people dealing with construction in Auckland. I was asked to update their old and outdated website to something with a little more style. I recreated their site in WordPress and added custom components for the functionality they desired. I then trained them on maintaining their site themselves. You can view their site</span> <a class="purple-link with-background" target="_blank" href="https://www.evolutionbuilders.co.nz">here &rArr;</a>.</p>
 
-                            <div class="error-area">
-
+                        <div class="images">
+                            <div class="image">
+                                <img src="../img/projects/evolution/" alt="">
                             </div>
-                        </form>
-                        <div id="thanks-message" style="display: none;">
-                            <p class=""><span class="selected">Thanks for getting in touch. I will respond to your query shortly. Cheers!</span></p>
                         </div>
                     </div>
-                    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-
-                    <script type="text/javascript">
-
-
-                            $('#btnSubmit').on('click', function(e) {
-                                e.preventDefault();
-
-                                var swapMessage = function() {
-                                    $('#contact-form').hide();
-                                    $('#thanks-message').show();
-                                }
-
-                                $('#contact-form').validate({
-                                    errorLabelContainer: '.error-area',
-                                    rules: {
-                                        name: 'required',
-                                        service: 'required',
-                                        email: {
-                                        required: true,
-                                        email: true,
-                                        }
-                                    },
-                                    messages: {
-                                        name: 'Would be nice to know who you are. ',
-                                        email: 'Would love to know how to get in touch with you. ',
-                                        service: 'Which of my services are of interest to you?'
-                                    },
-                                    submitHandler: function(form) {
-                                        form.submit();
-                                        swapMessage();
-                                    }
-
-                                    
-                                });                               
-                                
-                                
-                            });
-                        
-                    </script>
-                  <p class="transition-slide-right"><a class="purple-link with-background" href="/portfolio.html"><nobr>My work &rArr;</nobr></a><span class="selected"> / </span><a class="purple-link with-background" href="/services.html"><nobr>Services I offer &rArr; </nobr></a></p>
-                </div>
+                </div>    
               </div>
+              <div class="transition-slide-right">
+                    <div class="parallax-container" data-pointer-events="true">
+                        <div class="parallax-element" data-depth="0.1">
+                            <p><span class="selected">More of </span><a class="purple-link with-background" href="/services.html"><nobr>My Services &rArr;</nobr></a><span class="selected"> / </span><a class="purple-link with-background" href="/contact.html"><nobr>Contact me &rArr;</nobr></a></p>
+                        </div>
+                        
+                    </div>
               
           </div>
           

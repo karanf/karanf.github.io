@@ -926,6 +926,13 @@
 		"oAP": "\/portfolio.html",
 		"oF": 0
 		},
+	"\/projects\/evolution.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/projects\/evolution.html",
+		"oF": 0
+		},
 	"\/projects\/neighbourly.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -938,6 +945,27 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/projects\/project-template.html",
+		"oF": 0
+		},
+	"\/projects\/snowball.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/projects\/snowball.html",
+		"oF": 0
+		},
+	"\/projects\/stuff.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/projects\/stuff.html",
+		"oF": 0
+		},
+	"\/projects\/wha.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/projects\/wha.html",
 		"oF": 0
 		},
 	"\/sass\/main.scss": {
