@@ -16,8 +16,24 @@
         flex: 0 0 auto;
         text-align: center;
 
+        &.inline-half {
+            width: 100%;
+
+            @media screen and (min-width: $tablet) {
+                width: 50%;
+            }
+        }
+
+        &.inline-third {
+            width: 100%;
+
+            @media screen and (min-width: $tablet) {
+                width: 33.333333%;
+            }
+        }
+
         img {
-            max-width: auto;
+            max-width: 100%;
             height: auto;
             max-height: 800px;
             box-shadow: 0 0 10px rgba(0,0,0,0.35);

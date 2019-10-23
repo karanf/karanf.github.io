@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Karan's Portfolio</title>
+		<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+	<div class="preloader">
+		<div class="loader">
+		<svg class="lnr lnr-sync"><use xlink:href="#lnr-sync"></use></svg>
+		<p><a href="index.html">LOADING</a></p>
+		</div>
+	</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
+			<script>
+				var $spinner = $('.preloader .loader svg'),
+				tl = new TimelineMax();
+
+				TweenMax.to($spinner, 1, {
+			        rotation: "360",
+			        repeat: -1
+			    });
+			</script>
+		</body>
+	</html>

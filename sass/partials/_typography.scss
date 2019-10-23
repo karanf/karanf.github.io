@@ -11,6 +11,9 @@ h6 {
     line-height: 1.2em;
     margin-bottom: 0.2em;
     margin-top: 0.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 h1 {

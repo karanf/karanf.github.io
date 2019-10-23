@@ -125,7 +125,10 @@ h6 {
   text-transform: uppercase;
   line-height: 1.2em;
   margin-bottom: 0.2em;
-  margin-top: 0.2em; }
+  margin-top: 0.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 h1 {
   font-size: 2rem;
@@ -433,7 +436,8 @@ button {
   transition: all 0.7s cubic-bezier(0.82, -0.17, 0.37, 1.33);
   opacity: 1;
   -webkit-transform-origin: 0 100%;
-          transform-origin: 0 100%; }
+          transform-origin: 0 100%;
+  max-width: 100%; }
 
 .transition-slide-right {
   -webkit-transition: all 0.7s cubic-bezier(0.82, -0.17, 0.37, 1.33);
@@ -667,8 +671,18 @@ select {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     text-align: center; }
+    .images .image.inline-half {
+      width: 100%; }
+      @media screen and (min-width: 768px) {
+        .images .image.inline-half {
+          width: 50%; } }
+    .images .image.inline-third {
+      width: 100%; }
+      @media screen and (min-width: 768px) {
+        .images .image.inline-third {
+          width: 33.333333%; } }
     .images .image img {
-      max-width: auto;
+      max-width: 100%;
       height: auto;
       max-height: 800px;
       -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);

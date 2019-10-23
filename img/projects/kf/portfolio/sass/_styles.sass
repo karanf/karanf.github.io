@@ -1,0 +1,245 @@
+html
+	width: 100%
+	height: 100%
+	box-sizing: border-box
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+*, *:before, *:after
+	box-sizing: inherit
+	box-sizing: inherit
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	outline: none
+
+::selection
+	color: $homeTextColor
+	background-color: $secondaryTextColor
+
+body
+	background-color: $secondaryTextColor
+	background-image: url("../img/bg.png")
+	background-repeat: no-repeat
+	background-size: cover
+	background-attachment: fixed
+	background-position: 50% 0
+	font-family: $fontSecondary
+	width: 100%
+	height: 100%
+	color: $homeTextColor
+	overflow: hidden
+	font-size: 12px
+	-webkit-font-smoothing: antialiased
+	+breakpoint($tabletPortrait)
+		font-size: 16px
+	+breakpoint($tabletLandscape)
+		font-size: 14px
+	+breakpoint($smallDesktop)
+		font-size: 16px
+
+.blurred
+	filter: blur(15px)
+
+.preloader
+	z-index: 1200
+
+.black, .preloader
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: black
+
+.black
+	opacity: 0
+
+.loader
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	text-align: center
+	p
+		font-size: 12px
+		text-align: center
+		a
+			color: white
+			text-decoration: none
+	.lnr
+		display: block
+		fill: currentColor
+		width: 1em
+		height: 1em
+		vertical-align: -0.05em
+		color: $whiteBGSecondary
+		font-size: 36px
+		margin: 0 auto
+		cursor: pointer
+
+#home
+	z-index: 100
+
+#home, #about, #contact
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	.main-container
+		display: flex
+		width: 100%
+		max-width: 1200px
+		margin: 0 auto
+		height: 100%
+		justify-content: center
+		.wrapper
+			display: flex
+			flex-direction: column
+			flex-wrap: nowrap
+			justify-content: center
+			align-items: stretch
+			width: 100%
+			main
+				display: flex
+				flex: 7 7 70px
+				height: 70%
+				text-align: center
+				flex-wrap: nowrap
+				justify-content: center
+				align-items: center
+				align-self: center
+				width: 80%	
+				flex-direction: column
+				+breakpoint($mobileLandscape)
+					flex-direction: row
+				+breakpoint($tabletPortrait)
+					flex: 7.5 7.5 75px
+					flex-direction: column
+				+breakpoint($tabletLandscape)
+					flex-direction: row
+				+breakpoint($smallDesktop)
+					flex-direction: row
+				.content
+					a
+						color: $whiteBGColor
+						margin: 3px
+						padding: 1px 5px 1px
+						transition: all 0.3s ease
+						border-radius: 2px
+						font-family: 'MontserratRegular'
+						text-decoration: none
+						&:hover
+							background-color: $whiteBGColor
+							color: $whiteBGSecondary
+						&.contact
+							text-decoration: none
+							font-size: 14px
+							font-family: 'MontserratRegular'
+							line-height: 16px
+							+breakpoint($tabletPortrait)
+								font-size: 18px
+								line-height: 20px
+							+breakpoint($tabletLandscape)
+								font-size: 16px
+								line-height: 18px
+							+breakpoint($smallDesktop)
+								font-size: 18px
+								line-height: 20px
+.error
+	border-bottom-color: #ff0101 !important
+
+#contact
+	form
+		font-size: 14px
+		input[type=text]
+			display: inline-block
+			border: none
+			border-bottom: 3px
+			border-bottom-style: solid
+			border-bottom-color: $whiteBGColor
+			background-color: transparent
+			margin: 5px
+			width: 98%
+			padding: 3px
+			color: #222222
+			border-radius: none
+			outline: none !important
+			-webkit-appearance: none
+			font-size: 12px
+				
+			+breakpoint($tabletPortrait)
+				width: 90%
+				font-size: 14px
+			+breakpoint($tabletLandscape)
+				width: 45%
+				font-size: 14px
+			+breakpoint($smallDesktop)
+				width: 45%
+				font-size: 14px
+		.hidden
+			display: none !important
+			visibility: none
+		textarea
+			display: inline-block
+			border: none
+			border-bottom: 3px
+			border-bottom-style: solid
+			border-bottom-color: $whiteBGColor
+			margin: 5px
+			width: 92%
+			padding: 3px
+			color: #222222
+			height: 70px
+			resize: none
+			background-color: transparent
+			outline: none !important
+			-webkit-appearance: none
+		input[type=submit], input[type=reset]
+			color: white
+			background-color: black
+			border: none
+			padding: 3px
+			margin: 5px
+			border-radius: none
+			outline: none !important
+			-webkit-appearance: none
+			+breakpoint($tabletPortrait)
+				padding: 6px
+			+breakpoint($tabletLandscape)
+				padding: 6px
+			+breakpoint($smallDesktop)
+				padding: 6px
+
+#work
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	.main-container
+		display: flex
+		width: 100%
+		margin: 0 auto
+		height: 100%
+		justify-content: center
+		.wrapper
+			display: flex
+			flex-direction: column
+			flex-wrap: nowrap
+			justify-content: center
+			align-items: stretch
+			width: 100%
+			main
+				display: flex
+				flex: 7 7 70px
+				height: 70%
+				text-align: center
+				flex-wrap: nowrap
+				justify-content: center
+				align-items: center
+				align-self: center
+				width: 100%	
+				flex-direction: column

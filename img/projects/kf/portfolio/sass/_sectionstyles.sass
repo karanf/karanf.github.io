@@ -1,0 +1,263 @@
+#about, #work, #contact
+	background-color: $whiteBGSecondary
+	background-image: url('../img/white-noise.jpg')
+	color: $whiteBGColor
+	z-index: 10
+	left: -100%
+
+
+	
+	.main-container
+		.wrapper
+			&.blur
+				filter: blur(5px)
+			header
+				z-index: 500
+				h1, h2
+					text-shadow: none
+					color: $whiteBGColor
+				
+				h2
+					span
+						a
+							color: $whiteBGColor
+							text-shadow: none
+					&::before, &::after
+						content: ''
+						border: 1px solid $whiteBGColor
+						box-shadow: none
+				.svg
+					p
+						img
+							cursor: pointer
+			main
+				.title
+					display: flex
+					flex: 2 2 20px
+					width: 100%
+					height: 100%
+					position: relative
+					font-family: $fontHeader
+					letter-spacing: 0
+					font-weight: normal
+					padding: 20px 0
+					margin: 20px 0 0 0
+					justify-content: center
+					align-items: center
+					+breakpoint($mobileLandscape)
+						flex: 3.3 3.3 33.3333px
+					+breakpoint($tabletPortrait)
+						flex: 2 2 20px
+					p
+						color: $whiteBGColor
+						position: relative
+						padding: 0
+						margin: 0
+						text-align: center
+						font-size: 40px
+						.titlename
+							padding: 0 2px
+							span
+								display: none
+						+breakpoint($mobileLandscape)
+							font-size: 28px
+						+breakpoint($tabletPortrait)
+							font-size: 60px
+						+breakpoint($tabletLandscape)
+							font-size: 55px
+						+breakpoint($smallDesktop)
+							margin: -60px 0 0 0
+							font-size: 70px
+							.titlename
+								&::after
+									position: absolute
+									content: ''
+									top: 100%
+									left: 0
+									width: 100%
+									border-width: 3px
+									border-style: solid
+									border-color: black
+									pointer-events: none
+									transform: scale3d(1,1,1)
+								span
+									display: block
+									font-family: $fontSecondary
+									width: 100%
+									font-size: 16px
+									position: absolute
+									font-weight: normal
+									top: 120%
+									left: 0
+				.content
+					flex: 8 8 80px
+					padding: 0 30px
+					overflow-y: auto
+					height: auto
+					&::-webkit-scrollbar-button
+						width: 0
+						height: 0
+						display: none
+					&::-webkit-scrollbar-corner
+						background-color: transparent
+					&::-webkit-scrollbar
+						width: 5px
+						height: 5px
+					&::-webkit-scrollbar-thumb
+						background-color: rgba(0, 0, 0, 1)
+					+breakpoint($mobileLandscape)
+						flex: 6.6 6.6 66.6666px
+						height: 140px
+					+breakpoint($tabletPortrait)
+						flex: 8 8 80px
+						height: auto
+					+breakpoint($tabletLandscape)
+						height: 400px
+					+breakpoint($smallDesktop)
+						height: auto
+					+breakpoint($smallHeight)
+						max-height: 65vh
+					p
+						text-align: left
+
+#work
+	.main-container
+		.wrapper
+			header
+				width: 100%
+			footer
+				width: 100%
+			main
+				width: 100%
+				.title
+					// flex: 3.3 3.3 33.3333%
+					// width: 100%
+					// height: 100%
+					align-items: flex-start
+				.content
+					// flex: 6.5 6.5 65%
+					width: 100%
+					overflow: hidden
+					padding: 0
+					// height: 100%
+					.arrow
+						display: inline-block
+						position: relative
+						width: 10%
+						.arrowsymbol
+							position: absolute
+							top: 50%
+							left: 50%
+							transform: translate(-50%, -50%)
+							padding: 5px
+							.lnr
+								display: block
+								fill: currentColor
+								width: 1em
+								height: 1em
+								vertical-align: -0.05em
+								color: $whiteBGColor
+								font-size: 24px
+								margin: 0 auto
+								cursor: pointer
+
+								+breakpoint($tabletPortrait)
+									font-size: 36px
+								+breakpoint($tabletLandscape)
+									font-size: 36px
+								+breakpoint($smallDesktop)
+									font-size: 36px
+							
+												
+
+					.gallery
+						display: inline-block
+						width: 80%
+						height: 100%
+						overflow: hidden
+						.slider
+							display: block
+							margin: 0
+							padding: 0
+							width: 100%
+							overflow: hidden
+							position: relative
+							height: 100%
+							// flex-direction: row
+							// flex-wrap: nowrap
+							// justify-content: center
+							// align-items: center
+							.slide
+								display: block
+								text-align: center
+								margin: 0 auto
+								position: absolute
+								left: 0
+								right: 0
+								z-index: 1
+								// flex: 1 1 100%
+								// flex-direction: row
+								// justify-content: center
+								// align-items: center
+								// flex-wrap: wrap
+								img
+									//flex: 0.2 0.2 20%
+									width: 35%
+									height: auto
+									margin: 3px
+									display: inline-block
+									cursor: pointer
+									+breakpoint($mobileLandscape)
+										//flex: 1 1 20%
+										//height: 20%
+										width: 20%
+										height: auto
+										display: inline-block
+									+breakpoint($tabletPortrait)
+										//flex: 1 1 40%
+										//height: 40%
+										width: 38%
+										height: auto
+										display: inline-block
+									+breakpoint($tabletLandscape)
+										//flex: 1 1 20%
+										//height: 20%
+										width: 22%
+										height: auto
+										display: inline-block
+									+breakpoint($smallDesktop)
+										//flex: 1 1 20%
+										//height: 20%
+										width: 22%
+										height: auto
+										display: inline-block
+
+#contact
+	.main-container
+		.wrapper
+			main
+				.content
+					order: 2
+				.title
+					order: 1
+				+breakpoint($mobileLandscape)
+					.content
+						order: 1
+					.title
+						order: 2
+				+breakpoint($tabletPortrait)
+					.content
+						order: 2
+					.title
+						order: 1
+				+breakpoint($tabletLandscape)
+					.content
+						order: 1
+					.title
+						order: 2
+				+breakpoint($smallDesktop)
+					.content
+						order: 1
+					.title
+						order: 2
+
