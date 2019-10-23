@@ -16,6 +16,13 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/CNAME",
+		"oF": 0
+		},
 	"\/contact.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -7411,11 +7418,25 @@
 		"oAP": "\/projects\/generate.html",
 		"oF": 0
 		},
+	"\/projects\/graphic-design.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/projects\/graphic-design.html",
+		"oF": 0
+		},
 	"\/projects\/kf.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/projects\/kf.html",
+		"oF": 0
+		},
+	"\/projects\/logos.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/projects\/logos.html",
 		"oF": 0
 		},
 	"\/projects\/neighbourly.html": {

@@ -18,6 +18,7 @@
 
         &.inline-half {
             width: 100%;
+            align-self: center;
 
             @media screen and (min-width: $tablet) {
                 width: 50%;
@@ -26,6 +27,7 @@
 
         &.inline-third {
             width: 100%;
+            align-self: center;
 
             @media screen and (min-width: $tablet) {
                 width: 33.333333%;
