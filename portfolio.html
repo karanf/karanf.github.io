@@ -10,7 +10,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script type="text/javascript" src="//raw.githubusercontent.com/shantanubala/haptics.js/master/haptics.js"></script>
 </head>
 <body>
     <header>
@@ -520,8 +519,6 @@
                 $('.portfolio-slider').stop().animate({
                     scrollLeft: newScrollPosition
                 }, 300);
-
-                Haptics.vibrate(200);
             }
 
             const scrollRight = () => {
@@ -531,8 +528,6 @@
                 $('.portfolio-slider').stop().animate({
                     scrollLeft: newScrollPosition
                 }, 300);
-
-                Haptics.vibrate(200);
             }
 
             leftArrow.on('click', scrollLeft);
