@@ -467,13 +467,19 @@
       }
     }
     
-    var ver = iOSversion();
+    var isiPhone;
 
-    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+      if (/iP(hone|od|ad)/.test(navigator.platform)) {
+        isiPhone = true;
+      }
+      
+      var ver = iOSversion();
 
-    var shouldParallax;
+      var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
-    if (isSafari && ver[0] >= 13) {
+      var shouldParallax;
+
+      if (isiPhone && isSafari && ver[0] >= 13) {
       shouldParallax = false;
     } else {
         shouldParallax = true;
