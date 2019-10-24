@@ -34,7 +34,7 @@ String.prototype.hashCode = function(){
 					el.setAttribute(key, attr[key]);
 				}
 			} else {
-				return document.createElementNS("https://www.w3.org/2000/svg", el);
+				return document.createElementNS("http://www.w3.org/2000/svg", el);
 			}
 		};
 		Raphael.el.dropShadow = function(size, offsetX, offsetY, opacity) {

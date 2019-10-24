@@ -17,7 +17,7 @@
                     el.setAttribute(key, attr[key]);
                 }
             } else {
-                return document.createElementNS("https://www.w3.org/2000/svg", el);
+                return document.createElementNS("http://www.w3.org/2000/svg", el);
             }
         };
         Raphael.fn.addDropShadowFilter = function (size, offsetX, offsetY, opacity) {
