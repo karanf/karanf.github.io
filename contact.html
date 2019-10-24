@@ -472,15 +472,40 @@
         rightArrow.on('click', scrollRight);
     }
     
-scrollStuff();
+    scrollStuff();
 
+    function iOSversion() {
+      if (/iP(hone|od|ad)/.test(navigator.platform)) {
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+        return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+      }
+    }
+    
+    ver = iOSversion();
+
+    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+    var shouldParallax;
+
+    if (ver[0] >= 13 && isSafari) {
+      shouldParallax = false;
+    } else {
+        shouldParallax = true;
+    }
+
+    
+    
+    if (shouldParallax) {
       window.requestAnimationFrame(parallaxInit);
+    }
 
-      swup.on('contentReplaced', function(){
+    swup.on('contentReplaced', function(){
+      if (shouldParallax) {
         window.requestAnimationFrame(parallaxInit);
+      }
 
-        scrollStuff();
-      });
+      scrollStuff();
+    });
     </script>
 </body>
 </html>
