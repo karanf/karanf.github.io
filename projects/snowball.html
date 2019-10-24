@@ -280,8 +280,14 @@
                     divisor = 35;
                 } else if (window.innerWidth <= 1920 ) {
                     divisor = 80;
-                }else {
+                } else if (window.innerWidth <= 2560 ) {
                     divisor = 120;
+                } else if (window.innerWidth <= 3008 ) {
+                    divisor = 160;
+                } else if (window.innerWidth <= 3360 ) {
+                    divisor = 240;
+                } else {
+                    divisor = 300;
                 }
             }
 
