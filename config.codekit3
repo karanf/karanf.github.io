@@ -16,6 +16,46 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/404.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/404.html",
+		"oF": 0
+		},
+	"\/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 22796,
+		"oA": 0,
+		"oAP": "\/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 158506,
+		"oA": 0,
+		"oAP": "\/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 20748,
+		"oA": 0,
+		"oAP": "\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/CNAME": {
 		"cB": 0,
 		"ft": 8192,
@@ -57,6 +97,35 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 605,
+		"oA": 0,
+		"oAP": "\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1523,
+		"oA": 0,
+		"oAP": "\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/favicon.ico",
+		"oF": 0
+		},
 	"\/img\/chevron-arrow-down.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -66,6 +135,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/icon-base.png": {
+		"ft": 32768,
+		"iS": 126210,
+		"oA": 0,
+		"oAP": "\/img\/icon-base.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/k-logo-compressed.svg": {
 		"ft": 2097152,
@@ -7501,6 +7581,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/partials\/_404.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/css\/_404.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/partials\/_basic-styles.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -7636,6 +7729,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/services.html",
+		"oF": 0
+		},
+	"\/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/site.webmanifest",
 		"oF": 0
 		}
 	},

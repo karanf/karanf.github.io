@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg">
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "https://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="https://www.w3.org/2000/svg">
 <metadata/>
 <defs>
 <font id="aileronitalic" horiz-adv-x="1187">
@@ -10,7 +10,8 @@
 <glyph unicode="ﬂ" horiz-adv-x="1089" d="M70 0l166 942h-97l25 135h96l4 29q17 85 29 131q88 307 498 307q168 0 280 -39l-211 -1194q-14 -77 -14 -106q0 -85 119 -76l-23 -129q-55 -8 -127 -8q-76 0 -117 29.5t-41 103.5q0 30 27 180l193 1092q-59 12 -119 12q-231 0 -289 -176q-20 -73 -25 -111l-8 -45h223 l-24 -135h-223l-166 -942h-176z"/>
 <glyph horiz-adv-x="2048"/>
 <glyph horiz-adv-x="2048"/>
-<glyph unicode="" horiz-adv-x="2048"/>
+<glyph unicode="
+" horiz-adv-x="2048"/>
 <glyph unicode=" " horiz-adv-x="401"/>
 <glyph unicode="	" horiz-adv-x="401"/>
 <glyph unicode=" " horiz-adv-x="401"/>

@@ -3,9 +3,9 @@
 *
 * by Daniel Hoffmann
 * 
-* Based on Raphael Blur Plugin 0.1 by Dmitry Baranovskiy (http://raphaeljs.com)
+* Based on Raphael Blur Plugin 0.1 by Dmitry Baranovskiy (https://raphaeljs.com)
 * https://github.com/DmitryBaranovskiy/raphael/blob/master/plugins/raphael.blur.js
-* Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
+* Licensed under the MIT (https://www.opensource.org/licenses/mit-license.php) license.
 * 
 */
 
@@ -17,7 +17,7 @@
                     el.setAttribute(key, attr[key]);
                 }
             } else {
-                return document.createElementNS("http://www.w3.org/2000/svg", el);
+                return document.createElementNS("https://www.w3.org/2000/svg", el);
             }
         };
         Raphael.fn.addDropShadowFilter = function (size, offsetX, offsetY, opacity) {

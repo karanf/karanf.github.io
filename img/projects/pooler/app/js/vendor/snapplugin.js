@@ -3,7 +3,7 @@
  * DATE: 2014-11-10
  *
  * @license Copyright (c) 2008-2014, GreenSock. All rights reserved.
- * This work is subject to the terms at http://www.greensock.com/terms_of_use.html or for
+ * This work is subject to the terms at https://www.greensock.com/terms_of_use.html or for
  * Club GreenSock members, the software agreement that was issued with your membership.
  *
  * This is a manipulated version of the plugin for Raphael by Jack Doyle to work with Snap.svg (snapsvg.io)
