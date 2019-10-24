@@ -445,14 +445,20 @@
           return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
         }
       }
+
+      var isiPhone;
+
+      if (/iP(hone|od|ad)/.test(navigator.platform)) {
+        isiPhone = true;
+      }
       
-      var version = iOSversion();
+      var ver = iOSversion();
 
       var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
       var shouldParallax;
 
-      if (isSafari && version[0] >= 13) {
+      if (isiPhone && isSafari && ver[0] >= 13) {
             shouldParallax = false;
       } else {
           shouldParallax = true;
